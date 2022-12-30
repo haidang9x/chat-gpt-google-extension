@@ -62,7 +62,7 @@ function ChatGPTQuery(props: Props) {
 
   if (answer) {
     return (
-      <div id="answer" className="markdown-body gpt-inner" dir="auto">
+      <section id="answer" className="markdown-body gpt-inner" dir="auto">
         <div className="gpt-header">
           <span className="font-bold">ChatGPT</span>
           <span className="cursor-pointer leading-[0]" onClick={openOptionsPage}>
@@ -81,7 +81,7 @@ function ChatGPTQuery(props: Props) {
             </span>
           </p>
         )}
-      </div>
+      </section>
     )
   }
 

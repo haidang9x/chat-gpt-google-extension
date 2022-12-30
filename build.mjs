@@ -17,6 +17,7 @@ async function runEsbuild() {
       'src/content-script/index.tsx',
       'src/background/index.ts',
       'src/options/index.tsx',
+      'src/popup/popup-chat.jsx',
     ],
     bundle: true,
     outdir: outdir,
@@ -68,9 +69,10 @@ async function build() {
     { src: 'build/content-script/index.js', dst: 'content-script.js' },
     { src: 'build/content-script/index.css', dst: 'content-script.css' },
     { src: 'build/background/index.js', dst: 'background.js' },
-    { src: 'build/options/index.js', dst: 'options.js' },
-    { src: 'build/options/index.css', dst: 'options.css' },
-    { src: 'src/options/index.html', dst: 'options.html' },
+    // { src: 'build/options/index.js', dst: 'options.js' },
+    // { src: 'build/options/index.css', dst: 'options.css' },
+    // { src: 'src/options/index.html', dst: 'options.html' },
+    { src: 'build/popup/popup-chat.js', dst: 'popup-chat.js' },
     { src: 'src/logo.png', dst: 'logo.png' },
   ]
 
